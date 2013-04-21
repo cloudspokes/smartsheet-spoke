@@ -36,6 +36,13 @@ function twitterify($ret) {
 return $ret;
 }
 
+function setfeedcache( $seconds )
+{
+  // change the default feed cache recreation period to 1 hour
+  return 3600;
+}
+
+
 
 function word_limiter($str, $limit = 100, $end_char = '&#8230;')
 {

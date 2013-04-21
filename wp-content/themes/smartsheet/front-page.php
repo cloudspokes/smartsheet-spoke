@@ -52,7 +52,9 @@
 		<h2><?php echo get_option('ssBlogLabel'); ?></h2>
 		<?php		
 			// get the smartsheet feed
+			add_filter( 'wp_feed_cache_transient_lifetime' , 'setfeedcache' );
 			$rss = fetch_feed( get_option('ssBlogURL') );
+			remove_filter( 'wp_feed_cache_transient_lifetime' , 'setfeedcache' );
 			
 			if (!is_wp_error( $rss ) ) :
 				 $maxitems 	= $rss->get_item_quantity(get_option('ssBlogItems'));

@@ -66,7 +66,13 @@
 
 
 	<?php /* A feed of the SmartSheet Twitter */ ?>
+	<a class="twitter-timeline" href="https://twitter.com/SmartsheetAPI" data-widget-id="349770854143504385">Tweets by @SmartsheetAPI</a>
+	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+	<?php /* deprecated twitter api 
+
 	<section id="twitter">
+	
 		<h2><?php echo get_option('ssTweetLabel'); ?></h2>
 		<ul>
 		<?php		
@@ -96,6 +102,7 @@
 		<a href="<?php echo get_option('ssTweetAll'); ?>" class="view-all">View All</a>
 		<?php endif; ?>
 	</section>
+		*/ ?>
 	<!-- end of #twitter section -->
 	
 	

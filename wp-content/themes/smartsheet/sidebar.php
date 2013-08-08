@@ -68,20 +68,20 @@
 	<section id="badges">
 		<h2>Badges</h2>
 
-		<table style="text-align:center">
+		<table style="text-align:center" width="316">
 			<tbody>
 				<tr>
-					<td valign="top" width="60px">
+					<td valign="top">
 						<img src="http://2.bp.blogspot.com/-WNcpa3yLVD8/UgOXuNWeIwI/AAAAAAAAvd8/Lj-m9bwZJuk/s1600/silver_white_sm.png"/>
 						<p><strong>Silver</strong></p>
 						<p>Valid submission on any Smartsheet challenge
 					</td>
-					<td valign="top" width="60px">
+					<td valign="top">
 						<img src="http://2.bp.blogspot.com/-UvCSDrRq5wI/UgOXuOMyMeI/AAAAAAAAveE/YPaHtqTWgtE/s1600/gold_white_sm.png"/>
 						<p><strong>Gold</strong></p>
 						<p>3 valid Smartsheet submissions and one placement
 					</td>
-					<td valign="top" width="60px">
+					<td valign="top">
 						<img src="http://1.bp.blogspot.com/-VLEbjAet-Mk/UgOXuE7f-fI/AAAAAAAAveA/9hsbYMvpOSs/s1600/platinum_white_sm.png"/>
 						<p><strong>Platinum</strong></p>
 						<p>5 valids, 2 placements, and one community judge

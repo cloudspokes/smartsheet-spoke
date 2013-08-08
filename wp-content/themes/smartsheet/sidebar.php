@@ -64,6 +64,33 @@
 	</section>
 	<!-- end of #resources section -->	
 
+	<?php /* Badges */ ?>
+	<section id="badges">
+		<h2>Badges</h2>
+
+		<table style="text-align:center;font-size:small">
+			<tbody>
+				<tr>
+					<td valign="top" width="50px">
+						<img src="http://2.bp.blogspot.com/-WNcpa3yLVD8/UgOXuNWeIwI/AAAAAAAAvd8/Lj-m9bwZJuk/s1600/silver_white_sm.png"/>
+						<p>Silver</p>
+						<p>Valid submission on any Smartsheet challenge
+					</td>
+					<td valign="top" width="50px">
+						<img src="http://2.bp.blogspot.com/-UvCSDrRq5wI/UgOXuOMyMeI/AAAAAAAAveE/YPaHtqTWgtE/s1600/gold_white_sm.png"/>
+						<p>Gold</p>
+						<p>3 valid Smartsheet submissions and one placement
+					</td>
+					<td valign="top" width="50px">
+						<img src="http://1.bp.blogspot.com/-VLEbjAet-Mk/UgOXuE7f-fI/AAAAAAAAveA/9hsbYMvpOSs/s1600/platinum_white_sm.png"/>
+						<p>Platinum</p>
+						<p>5 valids, 2 placements, and one community judge
+					</td>
+			</tbody>
+		</table>
+	</section>
+	<!-- end of #badges section -->
+
 
 	<?php /* A feed of the SmartSheet Twitter */ ?>
 	<a class="twitter-timeline" href="https://twitter.com/SmartsheetAPI" data-widget-id="349770854143504385">Tweets by @SmartsheetAPI</a>

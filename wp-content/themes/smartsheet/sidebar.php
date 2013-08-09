@@ -36,21 +36,6 @@
 
 	</section>
 	<!-- end of #challenges section -->
-
-	<?php /* A feed of the closed Smartsheet CloudSpokes challenges */ ?>
-	<section id="recentchallenges">
-
-		<style>
-    	/* Remove Feedburner logo by shinemat.com */
-
-    				div  #creditfooter{
-    			display: none;
-    		}
-    	</style>
-		<script src="http://feeds.feedburner.com/RecentlyCompletedFinancialForceChallenges?format=sigpro" type="text/javascript" ></script><noscript>
-
-	</section>
-	<!-- end of #recentchallenges section -->
 	
 	<?php /* Resources */ ?>
 	<section id="resources">

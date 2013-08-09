@@ -34,6 +34,12 @@
 		<a href="<?php echo get_option('ssChallengeAll'); ?>" class="view-all">View All</a>
 		<?php endif; ?>
 
+	</section>
+	<!-- end of #challenges section -->
+
+	<?php /* A feed of the closed Smartsheet CloudSpokes challenges */ ?>
+	<section id="recentchallenges">
+
 		<style>
     	/* Remove Feedburner logo by shinemat.com */
 
@@ -44,7 +50,7 @@
 		<script src="http://feeds.feedburner.com/RecentlyCompletedFinancialForceChallenges?format=sigpro" type="text/javascript" ></script><noscript>
 
 	</section>
-	<!-- end of #challenges section -->
+	<!-- end of #recentchallenges section -->
 	
 	<?php /* Resources */ ?>
 	<section id="resources">

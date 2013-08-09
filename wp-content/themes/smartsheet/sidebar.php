@@ -33,10 +33,11 @@
 		<?php if (get_option('ssChallengeAll')) : // show only if there is view all url ?>
 		<a href="<?php echo get_option('ssChallengeAll'); ?>" class="view-all">View All</a>
 		<?php endif; ?>
+
+		<script src="http://feeds.feedburner.com/RecentlyCompletedFinancialForceChallenges?format=sigpro" type="text/javascript" ></script><noscript>
+
 	</section>
 	<!-- end of #challenges section -->
-	
-	
 	
 	<?php /* Resources */ ?>
 	<section id="resources">

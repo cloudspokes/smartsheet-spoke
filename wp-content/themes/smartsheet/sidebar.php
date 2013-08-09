@@ -34,6 +34,13 @@
 		<a href="<?php echo get_option('ssChallengeAll'); ?>" class="view-all">View All</a>
 		<?php endif; ?>
 
+		<style>
+    	/* Remove Feedburner logo by shinemat.com */
+
+    				div  #creditfooter{
+    			display: none;
+    		}
+    	</style>
 		<script src="http://feeds.feedburner.com/RecentlyCompletedFinancialForceChallenges?format=sigpro" type="text/javascript" ></script><noscript>
 
 	</section>

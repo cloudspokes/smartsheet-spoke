@@ -106,6 +106,28 @@ function themeoptions_page()
 			
 			<br />
 
+			<h3>SmartSheet CloudSpokes Recent Challenges</h3>
+			<table width="100%">
+				<tr><?php $field = 'ssRecentChallengeLabel'; ?>
+					<td width="150"><label for="<?php echo $field; ?>">Section Title:</label></td>
+					<td><input type="text" id="<?php echo $field; ?>" name="<?php echo $field; ?>" size="100" value="<?php echo get_option($field); ?>"/></td>
+				</tr>
+				<tr><?php $field = 'ssRecentChallengeURL'; ?>
+					<td><label for="<?php echo $field; ?>">Feed URL:</label></td>
+					<td><input type="text" id="<?php echo $field; ?>" name="<?php echo $field; ?>" size="100" value="<?php echo get_option($field); ?>"/></td>
+				</tr>
+				<tr><?php $field = 'ssRecentChallengeItems'; ?>
+					<td><label for="<?php echo $field; ?>">Number of Items to show:</label></td>
+					<td><input type="text" id="<?php echo $field; ?>" name="<?php echo $field; ?>" size="100" value="<?php echo get_option($field); ?>"/></td>
+				</tr>
+				<tr><?php $field = 'ssRecentChallengeAll'; ?>
+					<td><label for="<?php echo $field; ?>">View All URL:</label></td>
+					<td><input type="text" id="<?php echo $field; ?>" name="<?php echo $field; ?>" size="100" value="<?php echo get_option($field); ?>"/></td>
+				</tr>
+			</table>
+			
+			<br />
+
 			<h3>SmartSheet Blog</h3>
 			<table width="100%">
 				<tr><?php $field = 'ssBlogLabel'; ?>
@@ -196,6 +218,12 @@ function themeoptions_update() {
 	update_option('ssChallengeURL', 	$_POST['ssChallengeURL']);
 	update_option('ssChallengeItems', 	$_POST['ssChallengeItems']);
 	update_option('ssChallengeAll', 	$_POST['ssChallengeAll']);
+
+	// Recent Challenge		
+	update_option('ssRecentChallengeLabel', 	$_POST['ssRecentChallengeLabel']);
+	update_option('ssRecentChallengeURL', 		$_POST['ssRecentChallengeURL']);
+	update_option('ssRecentChallengeItems', 	$_POST['ssRecentChallengeItems']);
+	update_option('ssRecentChallengeAll', 		$_POST['ssRecentChallengeAll']);
 
 	// Blog Feed
 	update_option('ssBlogLabel', 		$_POST['ssBlogLabel']);

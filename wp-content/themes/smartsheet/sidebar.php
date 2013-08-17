@@ -37,6 +37,45 @@
 	</section>
 	<!-- end of #challenges section -->
 	
+	
+	<?php /* A feed of the recent SmartSheet CloudSpokes challenges */ ?>
+	<?php if ( get_option('ssRecentChallengeURL')!='' ) : ?>
+	<section id="recent-challenges">
+		<h2><?php echo get_option('ssRecentChallengeLabel'); ?></h2>
+				
+		<ul>
+		<?php		
+			// get the challenge feed
+			$rss = fetch_feed( get_option('ssRecentChallengeURL') );
+			
+			if (!is_wp_error( $rss ) ) :
+				 $maxitems 	= $rss->get_item_quantity(get_option('ssRecentChallengeItems'));
+				 $rss_items = $rss->get_items(0, $maxitems); 
+				 if ($maxitems == 0) :
+					echo '<li>No items.</li>';						 
+				 else :
+					foreach ( $rss_items as $item ) :
+		?>
+			<li>
+				<strong><?php echo $item->get_title(); ?></strong>
+				<?php echo $item->get_description(); ?>
+				<a href="<?php echo $item->get_link(); ?>">View Details &raquo;</a>	
+			</li>
+		<?php
+					endforeach;
+				endif;
+			endif;
+		?>
+		</ul>		
+		
+		<?php if (get_option('ssRecentChallengeAll')) : // show only if there is view all url ?>
+		<a href="<?php echo get_option('ssRecentChallengeAll'); ?>" class="view-all">View All</a>
+		<?php endif; ?>
+	</section>
+	<!-- end of #challenges section -->	
+	<?php endif; ?>
+	
+	
 	<?php /* Resources */ ?>
 	<section id="resources">
 		<h2>Resources</h2>

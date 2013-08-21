@@ -193,7 +193,7 @@ a:hover {
 				padding: 20px;
 			}
 				article h3.entry-title {
-					line-height: 0.5;
+					line-height: normal;
 					margin: 0;	
 				}
 				article span.meta {
